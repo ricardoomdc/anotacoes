@@ -1,0 +1,55 @@
+VARIÁVEIS
+    - let: Criar variáveis que podem ser alteradas
+    Ex: let nome = "Ricardo"; String(textos são sempre entre aspas)
+    console.log(nome); Vai imprimir na tela o nome, no caso Ricardo
+
+    - const: Criar variáveis que NÃO podem ser alteradas
+    Ex: const idade = 30;
+    console.log(idade);
+
+OBJETOS 
+    Ex:
+    const pessoa = {
+    nome: "José", 
+    idade: 30,
+    altura: 1.73,
+    };
+    Para acessar somente a altura:
+    console.log("A altura é: " + pessoa.altura);
+    OU console.log(`A altura é: ${pessoa.altura}`);
+
+    ARRAY
+    Ex:            índice:     0        1         2
+    const listaDeCompras = ["Arroz", "Batata", "Maça"];
+    console.log(listaDeCompras[1])  vai imprimir Batata.
+
+    WHILE
+    Ex:
+    const listaDeCompras = ["Arroz", "Batata", "Maça"];
+    let indice = 0;  INCIAR UMA VARIÁVEL COM VALOR
+    while (indice < listaDeCompras.length) { TERÁ UMA CONDIÇÃO PARA LIMITAR A AÇÃO
+    console.log(listaDeCompras[indice]);  TERÁ UM COMANDO
+    indice++;  E SEMPRE TER UM INCREMENTO PARA TROCAR OS INDICES      essas ações podem ser escritas de uma vez no FOR
+    }
+
+    FOR
+    Ex:
+    const listaDeCompras = ["Arroz", "Batata", "Maça"];
+    for(let indice = 0; indice < listaDeCompras.length; indice++){
+    console.log(listaDeCompras[indice]);
+    }
+    outro exemplo:
+    for(let item of listaDeCompras){
+    console.log(item);
+    }
+
+    FUNÇÃO
+    Ex:
+    function cumprimentarPessoa(nome){   NOME É UM PARÂMETRO QUE FUNCIONA COMO UMA VARIÁVEL CRIADA DENTRO SOMENTE DA FUNÇÃO
+    console.log("Olá, " + nome);
+    }
+                                            
+    cumprimentarPessoa("José");  QUANDO EU CHAMAR A FUNÇÃO QUE USAREI UM ARGUMENTO PARA PREENCHER AQUELE PARÂMETRO.
+    nome assume o valor que passamos aqui em cima como argumento, no exemplo, José.
+    Posso chamar outra pessoa reaproveitando o código: 
+    cumprimentarPessoa("João");
